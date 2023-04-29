@@ -25,7 +25,7 @@ st.markdown(hide_default_format, unsafe_allow_html=True)
 ####
 
 # App's title image
-image = Image.open('.\images\logo_LB_no_icon.png')
+image = Image.open('./images/logo_LB_no_icon.png')
 
 st.image(image) # , caption='Sunrise by the mountains'
 
