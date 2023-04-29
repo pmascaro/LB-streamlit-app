@@ -73,7 +73,7 @@ if "df" not in st.session_state:
 
     # Load the Excel file into a DataFrame
     # st.session_state.df = pd.read_excel(".\Files\London Bulls Excel 21-22.xlsx", sheet_name ="Rolling")
-    st.session_state.df = pd.read_csv(".\Files\london_bulls_excel.csv")
+    st.session_state.df = pd.read_csv("./Files/london_bulls_excel.csv")
 
 
 
