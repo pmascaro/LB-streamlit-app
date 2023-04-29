@@ -166,7 +166,7 @@ with col2:
     yellow_card = st.text_input("Enter 1 if player received a red card or leave empty")
     red_card = st.text_input("Enter 1 if player received a yellow card or leave empty")
 
-# Allow users to select a tournament from the existing list, or select an empty option
+    # Allow users to select a tournament from the existing list, or select an empty option
     tournament = st.selectbox("Select tournament (leave empty if it's a new tournament)", [""] + unique_tournaments)
     
     # Allow users to add a new tournament
@@ -199,8 +199,6 @@ add_button = st.button("Press here to add statistics")
 
 st.write('\n')
 
-# checkpoint
-print(st.session_state.df.tail(4))
 
 # # If the "Press here to add statistics" button is clicked, add the new rows to the DataFrame
 if add_button:
@@ -235,10 +233,6 @@ df_most_recent['date'] = pd.to_datetime(df_most_recent['date']).dt.strftime('%d-
 
 # Display the filtered DataFrame
 st.write(df_most_recent)
-
-print(df_most_recent)
-# checkpoint
-print(st.session_state.df.tail(4))
 
 st.write('\n')
 
