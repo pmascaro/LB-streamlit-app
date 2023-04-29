@@ -189,7 +189,7 @@ with col2:
 
 
 # convert dates to int
-st.session_state.df['date'] = st.session_state.df['date'].apply( lambda item: item.strftime("%Y-%m-%d") )
+# st.session_state.df['date'] = st.session_state.df['date'].apply( lambda item: item.strftime("%Y-%m-%d") )
 
 ##
 # Buttons
